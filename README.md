@@ -24,7 +24,7 @@ And it lets you lower the input current or the charge current with one tap when 
 - Battery charge, time to full and time to the reserve. The current mode shows actual
   figures; the other one shows a forecast for "if we switch now".
 - Grid and inverter load in % with colour zones.
-- Quick buttons for the input current limit and the charge current (the values are set in ⚙).
+- Grid input load as a % of the input current limit reported by the GX.
 - Wall/tablet mode, grid-loss alerts, a 15-minute chart, and UA / EN.
 
 > Written by Claude Code under the guidance of a human.
@@ -77,7 +77,7 @@ To update, run the same command again.
 
 ### Caution
 
-The limit buttons **write settings to your GX**. Know what you are changing; use at your own risk.
+The monitor is **read-only**: it never writes settings to your GX.
 Tested on a MultiPlus-II GX 48/3000 with a Pylontech battery.
 This is not a Victron Energy product and is not affiliated with Victron Energy.
 
@@ -107,7 +107,7 @@ This is not a Victron Energy product and is not affiliated with Victron Energy.
 - Заряд батареї, час до повного заряду і до резерву. Поточний режим показує фактичні
   цифри, інший — прогноз «якщо перемкнемося зараз».
 - Навантаження мережі та інвертора у % з кольоровими зонами.
-- Швидкі кнопки вхідного струму і струму заряду (значення задаються в ⚙).
+- Завантаження вводу у % від ліміту вхідного струму, який повідомляє GX.
 - Настінний режим для планшета, сповіщення про зникнення мережі, графік за 15 хвилин, UA / EN.
 
 > Написано Claude Code під керівництвом людини.
@@ -160,7 +160,7 @@ ssh root@<IP-GX> 'mkdir -p /data/www/monitor && mv /tmp/victron-monitor.html /da
 
 ### Обережно
 
-Кнопки лімітів **записують налаштування у ваш GX**. Розумійте, що змінюєте; використовуйте на власний ризик.
+Монітор працює **лише на читання**: він нічого не записує в GX.
 Перевірено на MultiPlus-II GX 48/3000 з батареєю Pylontech.
 Це не продукт Victron Energy і не пов'язано з Victron Energy.
 
